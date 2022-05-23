@@ -149,7 +149,7 @@ ol {
 .current {
   color: var(--hover-color);
 }
-@media screen and (min-with: 768px) {
+@media screen and (min-width: 768px) {
   .current::before {
     content: "";
     height: 4px;
@@ -157,7 +157,7 @@ ol {
     background-color: var(--hover-color);
     border-radius: 4px;
     position: absolute;
-    bottom: -3px;
+    bottom: -2px;
   }
 }
 
@@ -375,14 +375,9 @@ ol {
 .hero {
   background: var(--work-color);
 }
-@media screen and (min-width: 768px) {
-  .hero {
-    padding: 118px 0px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
+    margin: 0 auto;
   }
 }
 
@@ -428,7 +423,6 @@ ol {
 }
 
 .hero__title {
-  padding-top: 118px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -440,6 +434,11 @@ ol {
   letter-spacing: 0.06em;
   text-align: center;
 }
+@media screen and (min-width: 480px) {
+  .hero__title {
+    padding-top: 118px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero__title {
     width: 360px;
@@ -450,6 +449,7 @@ ol {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
+    padding-top: 200px;
   }
 }
 
@@ -699,6 +699,11 @@ ol {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 480px) {
+  .footer-con {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-con {
     flex-direction: row;
@@ -707,7 +712,6 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .footer-con {
-    justify-content: space-between;
     align-items: baseline;
   }
 }
@@ -854,7 +858,7 @@ ol {
 }
 
 .footer-form__input {
-  width: 100%;
+  width: auto;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1021,7 +1025,7 @@ ol {
 .portfolio-card__overlay {
   position: relative;
   overflow: hidden;
-  width: 450px;
+  max-width: 450px;
 }
 .portfolio-card__overlay img {
   width: 450px;
@@ -1105,6 +1109,12 @@ ol {
   border-radius: 50%;
   background-color: var(--work-color);
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-form {
@@ -1247,6 +1257,11 @@ ol {
   height: 15px;
   transform: translateY(-50%);
 }
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__svg {
+    left: 12px;
+  }
+}
 
 .modal-checkbox__label {
   font-weight: 400;
@@ -1265,6 +1280,11 @@ ol {
 .modal-checkbox__label .modal-checkbox__svgcheck {
   position: absolute;
   opacity: 0;
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__label {
+    font-size: 14px;
+  }
 }
 
 .modal__btn-close {
@@ -1289,6 +1309,11 @@ ol {
   width: 16px;
   height: 15px;
   transform: translateY(-50%);
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__checkbox:checked ~ .modal-checkbox__svgcheck {
+    left: 12px;
+  }
 }
 
 /* Work */

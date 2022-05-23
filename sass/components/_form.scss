@@ -140,6 +140,9 @@
   width: 16px;
   height: 15px;
   transform: translateY(-50%);
+  @media screen and (min-width:1200px) {
+    left: 12px;
+  }
 }
 
 .modal-checkbox__label {
@@ -158,6 +161,9 @@
   .modal-checkbox__svgcheck {
     position: absolute;
     opacity: 0;
+  }
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
   }
 }
 
@@ -183,4 +189,7 @@
   width: 16px;
   height: 15px;
   transform: translateY(-50%);
+  @media screen and (min-width:1200px) {
+    left: 12px;
+  }
 }

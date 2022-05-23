@@ -113,7 +113,7 @@
 .portfolio-card__overlay {
   position: relative;
   overflow: hidden;
-  width: 450px;
+  max-width: 450px;
   img {
     width: 450px;
   }

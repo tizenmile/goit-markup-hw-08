@@ -1,10 +1,11 @@
 .hero {
   background: var(--work-color);
   @media screen and (min-width: 768px) {
-    padding: 118px 0px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
+    // padding: 200px 0px;
+    // max-width: 1600px;
+    margin: 0 auto;
   }
 }
 
@@ -71,7 +72,7 @@
 }
 
 .hero__title {
-  padding-top: 118px;
+  // padding-top: 118px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -82,13 +83,19 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   text-align: center;
+  @media screen and (min-width: 480px) {
+    padding-top: 118px;
+  }
   @media screen and (min-width: 768px) {
     width: 360px;
+    // padding-top: 0px;
+    // padding: 118px 0px;
   }
   @media screen and (min-width: 1200px) {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
+    padding-top: 200px;
   }
 }
 
