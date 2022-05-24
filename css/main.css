@@ -36,17 +36,17 @@ ol {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -372,6 +372,10 @@ ol {
   transform: rotate(90deg);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .hero {
   background: var(--work-color);
 }
@@ -399,10 +403,20 @@ ol {
     max-width: 480px;
   }
 }
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero-sec {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header_mobile-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-sec {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header_table.jpg");
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-sec {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header_table-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -423,6 +437,7 @@ ol {
 }
 
 .hero__title {
+  padding-top: 118px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -664,11 +679,6 @@ ol {
   height: 92px;
   width: calc((100% - 60px) / 2);
 }
-@media screen and (min-width: 480px) {
-  .clients__item {
-    width: calc((100% - 60px) / 2);
-  }
-}
 @media screen and (min-width: 768px) {
   .clients__item {
     width: calc((100% - 90px) / 3);
@@ -689,7 +699,12 @@ ol {
 
 .footer {
   background: var(--main-background-color);
-  padding: 60px 0 0 0;
+  padding: 60px 0 60px 0;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer {
+    padding: 60px 0 0 0;
+  }
 }
 
 .footer-con {
@@ -697,12 +712,7 @@ ol {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-@media screen and (min-width: 480px) {
-  .footer-con {
-    width: 100%;
-  }
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .footer-con {
@@ -713,6 +723,8 @@ ol {
 @media screen and (min-width: 1200px) {
   .footer-con {
     align-items: baseline;
+    max-width: 1200px;
+    align-items: center;
   }
 }
 
@@ -822,16 +834,7 @@ ol {
   flex-direction: column;
   text-align: center;
   align-items: center;
-}
-@media screen and (min-width: 480px) {
-  .footer__form {
-    margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__form {
-    width: 450px;
-  }
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .footer__form {
@@ -839,6 +842,7 @@ ol {
     display: flex;
     margin-left: auto;
     flex-direction: row;
+    margin-bottom: 40px;
   }
 }
 
@@ -858,7 +862,7 @@ ol {
 }
 
 .footer-form__input {
-  width: auto;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -903,7 +907,6 @@ ol {
   border-color: transparent;
   cursor: pointer;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .footer-form__btn::after {
@@ -913,6 +916,15 @@ ol {
   height: 24px;
   background-image: url(../images/icon-send.svg);
   margin-left: 10px;
+}
+
+.footer-form__label {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__label {
+    width: auto;
+  }
 }
 
 .portfolio-btn__list {
@@ -1088,7 +1100,7 @@ ol {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
+  width: 100%;
   height: 609px;
   background-color: var(--work-color);
   transform: translate(-50%, -50%);
@@ -1109,6 +1121,11 @@ ol {
   border-radius: 50%;
   background-color: var(--work-color);
   cursor: pointer;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

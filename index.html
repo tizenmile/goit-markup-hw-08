@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +36,7 @@
               ></use>
             </svg>
           </button>
-          <div class="header-mobile" data-menu>
+          <div class="header-mobile"  data-menu>
             <ul class="header-mobile__list list">
               <li class="header-mobile__item">
                 <a
@@ -269,11 +269,17 @@
             <h2 class="work__title">Чем мы занимаемся</h2>
             <ul class="work__list list">
               <li class="work__item">
-                <img src="./images/image1.jpg" alt="ноутбук" width="370" />
+                <img
+                  srcset="./images/image1.jpg 1x, ./images/image1-2x.jpg 2x"
+                  src="./images/image1.jpg"
+                  alt="ноутбук"
+                  width="370"
+                />
                 <p class="work__text">Десктопные приложения</p>
               </li>
               <li class="work__item">
                 <img
+                  srcset="./images/image2.jpg 1x, ./images/image2-2x.jpg 2x"
                   src="./images/image2.jpg"
                   alt="ще один ноутбук"
                   width="370"
@@ -281,7 +287,12 @@
                 <p class="work__text">Мобильные приложения</p>
               </li>
               <li class="work__item">
-                <img src="./images/image3.jpg" alt="планшет" width="370" />
+                <img
+                  srcset="./images/image3.jpg 1x, ./images/image3-2x.jpg 2x"
+                  src="./images/image3.jpg"
+                  alt="планшет"
+                  width="370"
+                />
                 <p class="work__text">Дизайнерские решения</p>
               </li>
             </ul>
@@ -295,6 +306,7 @@
             <ul class="team__list list">
               <li class="team__item">
                 <img
+                  srcset="./images/image4.jpg 1x, ./images/image4-2x.jpg 2x"
                   src="./images/image4.jpg"
                   alt="Игорь Демьяненко"
                   width="270"
@@ -335,7 +347,12 @@
                 </div>
               </li>
               <li class="team__item">
-                <img src="./images/image5.jpg" alt="Ольга Репина" width="270" />
+                <img
+                  srcset="./images/image5.jpg 1x, ./images/image5-2x.jpg 2x"
+                  src="./images/image5.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                />
                 <div class="team-div">
                   <h3 class="team-div__title">Ольга Репина</h3>
                   <p class="team-div__text">Frontend Developer</p>
@@ -373,6 +390,7 @@
               </li>
               <li class="team__item">
                 <img
+                  srcset="./images/image6.jpg 1x, ./images/image6-2x.jpg 2x"
                   src="./images/image6.jpg"
                   alt="Николай Тарасов"
                   width="270"
@@ -414,6 +432,7 @@
               </li>
               <li class="team__item">
                 <img
+                  srcset="./images/image7.jpg 1x, ./images/image7-2x.jpg 2x"
                   src="./images/image7.jpg"
                   alt="Михаил Ермаков"
                   width="270"
@@ -582,5 +601,6 @@
     </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/no-scroll.js"></script>
   </body>
 </html>
