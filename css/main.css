@@ -390,7 +390,6 @@ ol {
 
 .hero-sec {
   margin-bottom: 60px;
-  max-width: 480px;
   height: 400px;
   text-align: center;
   background-position: center;
@@ -398,12 +397,13 @@ ol {
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header_mobile.jpg");
 }
 @media screen and (min-width: 480px) {
   .hero-sec {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header_mobile.jpg");
-    max-width: 480px;
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
@@ -414,7 +414,6 @@ ol {
 @media screen and (min-width: 768px) {
   .hero-sec {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header_table.jpg");
-    max-width: 768px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -424,7 +423,8 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .hero-sec {
-    max-width: 1600px;
+    padding-top: 200px;
+    padding: 200px;
     height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/ImgOverlay.jpg);
   }
@@ -440,7 +440,6 @@ ol {
 }
 
 .hero__title {
-  padding-top: 118px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -452,11 +451,6 @@ ol {
   letter-spacing: 0.06em;
   text-align: center;
 }
-@media screen and (min-width: 480px) {
-  .hero__title {
-    padding-top: 118px;
-  }
-}
 @media screen and (min-width: 768px) {
   .hero__title {
     width: 360px;
@@ -467,7 +461,6 @@ ol {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
-    padding-top: 200px;
   }
 }
 
@@ -525,6 +518,12 @@ ol {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .benefits__list .benefits__title {
+    text-align: start;
+  }
 }
 .benefits__list .benefits__text {
   line-height: 1.71;
@@ -704,11 +703,6 @@ ol {
   background: var(--main-background-color);
   padding: 60px 0 60px 0;
 }
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding: 60px 0 0 0;
-  }
-}
 
 .footer-con {
   display: flex;
@@ -727,7 +721,8 @@ ol {
   .footer-con {
     align-items: baseline;
     max-width: 1200px;
-    align-items: center;
+    align-items: baseline;
+    justify-content: space-between;
   }
 }
 
@@ -753,8 +748,11 @@ ol {
 
 .footer-div__list {
   display: flex;
-  margin-bottom: 60px;
   justify-content: center;
+}
+
+.footer-div {
+  margin-bottom: 60px;
 }
 
 .footer-div__item + .footer-div__item {
@@ -810,6 +808,7 @@ ol {
 @media screen and (min-width: 1200px) {
   .footer__list {
     text-align: start;
+    margin-bottom: 0;
   }
 }
 
@@ -845,7 +844,6 @@ ol {
     display: flex;
     margin-left: auto;
     flex-direction: row;
-    margin-bottom: 40px;
   }
 }
 

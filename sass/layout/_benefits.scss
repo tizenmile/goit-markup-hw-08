@@ -29,6 +29,10 @@
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align:start;
+    }
   }
   .benefits__text {
     line-height: 1.71;
